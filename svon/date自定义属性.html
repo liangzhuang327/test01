@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.11.1.min.js">
+			
+		</script>
+	</head>
+	<body>
+		<button></button>
+		<button data-lz="无啊">说</button>
+		<button data-lu="ping">读</button>
+		<button data-ping="kkk">写</button>
+	</body>
+	<script type="text/javascript">
+		$("button").on("click",function(){
+			//var j=$(this).data();//读取所有的data属性
+			//var j=$(this).data("lz");//读取date-lz的属性
+			var j=$(this).data("id","luping")
+			var k=$(this).data();
+			console.log(k);
+			
+		});
+	</script>
+</html>

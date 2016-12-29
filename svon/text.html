@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="jquery-1.11.1.min.js">
+			
+		</script>
+	</head>
+	<body>
+		<ul class="main">
+			<li>我是一只逍遥子1</li>
+			<li>我是一只逍遥子2</li>
+			<li>我是一只逍遥子3</li>
+			<li>我是一只逍遥子4</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var lis=$("ul").find("li");
+			console.log(lis);
+			var lis2=$("li","ul");
+			//console.log($("body",document))  和document.body一样  
+			console.log(lis2);
+		})
+	</script>
+</html>
